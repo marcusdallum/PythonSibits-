@@ -33,3 +33,8 @@ if isFile == False:
 #if directory is not there create it
 if isDir == False:
     os.mkdir(savePath)
+
+#open a file and work with it , a = append, w = write
+f = open(filename, 'a')
+    f.write('something')
+    f.close
